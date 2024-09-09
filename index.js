@@ -8,10 +8,10 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      'https://server-alwarda.vercel.app',
+      'https://server-alwarda-kappa.vercel.app/',
       'https://client-alwarda-git-main-said-oulcaids-projects.vercel.app',
       'https://client-alwarda-2rywwzcpa-said-oulcaids-projects.vercel.app',
-      "https://server-alwarda.vercel.app/",
+      "https://server-alwarda-kappa.vercel.app//",
       "http://localhost:3000"
     ],
     methods: ["GET", "POST"],
@@ -32,10 +32,10 @@ const authenticateJWT = require("./middleware/authenticateJWT");
 // Middleware
 app.use(cors({
   origin: [
-    'https://server-alwarda.vercel.app',
+    'https://server-alwarda-kappa.vercel.app/',
     'https://client-alwarda-git-main-said-oulcaids-projects.vercel.app',
     'https://client-alwarda-2rywwzcpa-said-oulcaids-projects.vercel.app',
-    "https://server-alwarda.vercel.app/",
+    "https://server-alwarda-kappa.vercel.app//",
     "http://localhost:3000"
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
