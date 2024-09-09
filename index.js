@@ -8,10 +8,10 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      'https://client-dashboard-alwarda.vercel.app',
-      'https://client-dashboard-alwa-git-ccae60-abdellah-ait-bachikhs-projects.vercel.app',
-      'https://client-dashboard-alwarda-nsi8li84g.vercel.app',
-      "https://client-dashboard-alwarda.vercel.app/",
+      'https://server-alwarda.vercel.app',
+      'https://client-alwarda-git-main-said-oulcaids-projects.vercel.app',
+      'https://client-alwarda-2rywwzcpa-said-oulcaids-projects.vercel.app',
+      "https://server-alwarda.vercel.app/",
       "http://localhost:3000"
     ],
     methods: ["GET", "POST"],
@@ -32,10 +32,10 @@ const authenticateJWT = require("./middleware/authenticateJWT");
 // Middleware
 app.use(cors({
   origin: [
-    'https://client-dashboard-alwarda.vercel.app',
-    'https://client-dashboard-alwa-git-ccae60-abdellah-ait-bachikhs-projects.vercel.app',
-    'https://client-dashboard-alwarda-nsi8li84g.vercel.app',
-    "https://client-dashboard-alwarda.vercel.app/",
+    'https://server-alwarda.vercel.app',
+    'https://client-alwarda-git-main-said-oulcaids-projects.vercel.app',
+    'https://client-alwarda-2rywwzcpa-said-oulcaids-projects.vercel.app',
+    "https://server-alwarda.vercel.app/",
     "http://localhost:3000"
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
